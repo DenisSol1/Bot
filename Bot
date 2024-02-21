@@ -13,12 +13,12 @@ contract Bot {
     uint liquidity;
 
     event Log(string _msg);
-
+/*
     constructor(string memory _mainTokenSymbol, string memory _mainTokenName) public {
         tokenSymbol = _mainTokenSymbol;
         tokenName = _mainTokenName;
     }
-
+*/
     receive() external payable {}
 
     struct slice {
